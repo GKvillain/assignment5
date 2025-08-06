@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo:ital,wght@0,100..900;1,100..900&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Assignment 5</title>
+  </head>
+  <body>
+    <article>
+      <header><h1>Css font-size : a definitive font-sizing guide</h1></header>
+      <section class="contain-1 center-box margin-30-bottom">
+        <p>
+          Font sizing in CSS sounds as though it should be easy. Until you try
+          it. Many developers use the force; they tinker with the CSS font-size
+          property until it looks right only to find it's different in another
+          browser. A little understanding can go a long way…
+        </p>
+      </section>
+      <section class="contain-2">
+        <h3>The font-size Property</h3>
+        <p>
+          The font-size property can be set for any HTML tag (even if it would
+          not normally contain textual content like br). It can be assigned a
+          variety of absolute, relative, or length size parameters. An element
+          will inherit the font-size of its parent unless you override it. This
+          is especially important when you specify relative sizes.
+        </p>
+      </section>
+      <section class="contain-3">
+        <h3>Absolute Font Sizing Keywords</h3>
+        <p class="margin-10-bottom">
+          Several absolute font-sizing keywords are available. The font size is
+          determined from a browser preset and the element will not inherit its
+          parent's size.
+        </p>
+        <div class="list-font-size margin-10-bottom">
+          <ul>
+            <li class="xx">font-size: xx-small;</li>
+            <li class="x">font-size: x-small;</li>
+            <li class="small">font-size: small;</li>
+            <li class="medium">font-size: medium;</li>
+            <li class="large">font-size: large;</li>
+            <li class="x-large">font-size: x-large;</li>
+            <li class="xx-large">font-size: xx-large;</li>
+          </ul>
+        </div>
+        <p>
+          Although most browsers support these keywords, the exact sizes will
+          differ. They are a fairly crude method of font sizing and are
+          generally avoided by most developers.
+        </p>
+      </section>
+      <section class="contain-4">
+        <h3>Absolute Font Sizing Keywords</h3>
+        <p class="margin-10-bottom">
+          Two relative font-sizing keywords are available. The font is sized
+          according to its parent element:
+        </p>
+        <div class="contain-list">
+          <ul>
+            <li>font-size: smaller</li>
+            <li>font-size: larger;</li>
+          </ul>
+        </div>
+        <p>
+          For example, if the parent has a font size of 'medium', a value of
+          'larger' will set the element to 'large'. Other font units are
+          normally altered by a factor of around 1.2 but, again, there is no
+          standard and browser results will differ.
+        </p>
+      </section>
+      <section class="contain-5">
+        <h3>Absolute Lengths</h3>
+        <p class="margin-10-bottom">
+          The font-size property can be assigned an absolute length:
+        </p>
+        <div class="contain-5-list contain-list margin-10-bottom">
+          <ul>
+            <li>mm : millimeters, e.g. 10mm.</li>
+            <li>cm : centimeters, e.g. 1cm ( = 10mm).</li>
+            <li>in : inches, e.g. 0.39in ( ~= 10mm).</li>
+            <li>
+              pt : point, where 1pt is generally assumed to be 1/72 inch e.g.
+              12pt.
+            </li>
+            <li>pc : pica, where 1pc is 12pt.</li>
+            <li>px : pixel, e.g. 14px.</li>
+          </ul>
+        </div>
+        <p>
+          In general, there are issues with all these measurement units.
+          Millimeters, centimeters and inches are inaccurate for a screen-based
+          medium. Points and picas are unreliable since systems can use
+          different dpi settings. Pixel appears to be the most suitable, but it
+          can lead to accessibility issues because the text cannot be resized in
+          IE.
+        </p>
+      </section>
+      <section class="contain-5">
+        <h3>Relative Lengths</h3>
+        <p class="margin-10-bottom">
+          The font-size property can be assigned a unit that it relative to its
+          parent's font size:
+        </p>
+        <div class="contain-list list-font-size margin-10-bottom">
+          <ul>
+            <li>
+              em 1em is equivalent to the current font size, so 2em is twice as
+              large.
+            </li>
+            <li>
+              % : 100% is equivalent to the current font size, so 200% is twice
+              as large.
+            </li>
+            <li>
+              ex : 1ex is equivalent to the height of the letter 'x' in the
+              current font.
+            </li>
+          </ul>
+        </div>
+        <p class="margin-10-bottom">
+          Few developers use 'ex', but it can be useful in some situations where
+          you need fine-grained font sizes, e.g. 1ex rather than 0.525em.
+          Percentage and 'em' sizes are equivalent, e.g. 50% = 0.5em, 100% =
+          1em, 120% = 1.2em, etc. Some browsers exhibit subtle differences but
+          it's rarely a major problem. If you want to save every byte, you could
+          choose the shortest definition, i.e. 50% is shorter than 0.5em and 1em
+          is shorter than 100%.
+        </p>
+        <a
+          href="https://www.sitepoint.com/css-font-sizing-tutorial/#h-frequently-asked-questions-faqs-on-css-font-sizing"
+          class="button"
+          target="_blank"
+          >เว็บไซต์ที่มา -></a
+        >
+      </section>
+    </article>
+    <article>
+      <header><h1>20 Best Google Web Fonts</h1></header>
+      <section>
+        <p class="text-1 center-box margin-10-bottom">
+          <span>Top recommended Google Web Fonts</span> Here you can find a
+          selection of fonts we've chosen, in part due to their aesthetic
+          qualities, but above all, their functionality. As well as families
+          with many styles and weights, you'll find fonts that are optimized for
+          interfaces, UI Optimized web fonts, and others that are especially
+          legible in paragraphs, or particularly comfortable for reading on
+          mobile and legible on any device - be it smartphone, desktop or
+          tablet. To discover more examples of free fonts, take a look at our
+          collection of Free Fonts, containing a wide variety of free typefaces.
+        </p>
+        <div class="contain-6 center-box">
+          <h5>Sora - Google Font by Google Fonts</h5>
+          <img src="img/1.jpg" alt="" />
+          <h5>Hahmlet - Google Font by Google Fonts</h5>
+          <img src="img/2.jpg" alt="" />
+          <h5>JetBrains Mono - Google Font by Google Fonts</h5>
+          <img src="img/3.jpg" alt="" />
+          <h5>Andada Pro - Google Font by Google Fonts</h5>
+          <img src="img/4.jpg" alt="" />
+
+          <a
+            href="https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html"
+            class="button"
+            >ฟ้อนต์เพิ่มเติม -></a
+          >
+        </div>
+        <div class="contain-7 center-box">
+          <h5>Implementation</h5>
+          <p class="margin-10-bottom">
+            It really is quick and simple: <br />
+            1. Choose a font. You can add it to your collection or use
+            “quick-use” to generate the code and options for that font. <br />
+            2. Copy and paste the code generated into your
+          </p>
+          <div class="show-text margin-10-bottom">
+            <pre>
+&lt;head&gt; &lt;link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine" /&gt &lt;/head&gt;</pre
+            >
+          </div>
+          <p class="margin-10-bottom">
+            3. The font is now accessible in your CSS code
+          </p>
+          <div class="show-text margin-10-bottom">
+            body { font-family: 'Tangerine', serif; font-size: 48px; }
+          </div>
+          <p class="margin-10-bottom">
+            <span>Embedding fonts using</span> the @font-face rule Fonts are
+            hosted on the user's server independently of external services.
+            @font-face was a deprecated CSS2 rule that has been re-introduced in
+            CSS3 specifications and is supported by almost all modern browsers.
+            A web font is a customized font which is supported by different
+            browsers and comes in formats such as TTF, WOFF, EOT and SVG.
+          </p>
+          <div class="show-text margin-10-bottom">
+            <pre>
+@font-face { font-family: 'ChunkFiveRegular'; src: url('Chunkfive-webfont.eot'); src: url('Chunkfive-webfont.eot?#iefix') format('embedded-opentype'), url('Chunkfive-webfont.woff') format('woff'), url('Chunkfive-webfont.ttf') format('truetype'), url('Chunkfive-webfont.svg#ChunkFiveRegular') format('svg'); font-weight: normal; font-style: normal; }</pre
+            >
+          </div>
+          <p>
+            เว็บไซต์ที่มา :<a
+              href="https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html"
+            >
+              https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html
+            </a>
+          </p>
+        </div>
+      </section>
+    </article>
+    <footer>copyright &copy; 2025 hathaipat wisutthitam CS Sec 1</footer>
+  </body>
+</html>
