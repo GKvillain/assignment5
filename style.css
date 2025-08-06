@@ -13,11 +13,13 @@ body {
 img {
   width: 35%;
   height: 35%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   font-family: "Archivo Black";
   text-transform: uppercase;
+  font-size: 250%;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -26,6 +28,7 @@ h1 {
 }
 
 h3 {
+  font-size: 150%;
   font-family: "Archivo Black";
 }
 
@@ -43,13 +46,11 @@ h5 {
   font-weight: bold;
 }
 .contain-1,
-.contain-5-list,
 .text-1 {
   width: 60%;
   background-color: #e5f9f8;
   padding: 20px;
   border-style: dashed;
-  /* margin-bottom: 30px; */
 }
 
 .center-box {
@@ -68,7 +69,8 @@ h5 {
 .contain-2 h3,
 .contain-3 h3,
 .contain-4 h3,
-.contain-5 h3 {
+.contain-5 h3,
+.contain-6 h3 {
   margin-bottom: 10px;
   text-decoration: underline dashed;
 }
@@ -126,17 +128,20 @@ h5 {
 
 .button:link,
 .button:visited {
+  font-family: "Kanit";
   display: inline-block;
   padding: 15px;
-  background-color: red;
+  background-color: #3498db;
   border-radius: 20px;
   text-decoration: none;
   color: white;
+  font-weight: 500;
+  transition: 1.5s;
 }
 
 .button:hover,
 .button:active {
-  background-color: rgb(143, 17, 17);
+  background-color: #2980b9;
 }
 
 .contain-6,
@@ -163,9 +168,18 @@ h5 {
 }
 
 .show-text {
-  background-color: white;
-  overflow: scroll;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  font-family: "Google Sans Code";
+  border-radius: 8px;
   padding: 15px;
+  overflow: scroll;
+  border: 1px solid #34495e;
+  transition: box-shadow 0.3s;
+}
+
+.show-text:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 footer {
