@@ -1,13 +1,15 @@
 * {
+  /* เซ็ตค่าให้ทุก element ไม่มี padding, margin กำหนดให้ฟ้อนต์เป็น Chivo หากไม่สามารถแสดงผลได้ให้เป็น sans-serif */
   margin: 0;
   padding: 0;
   font-family: "Chivo", sans-serif;
 }
 
 body {
+  /* กำหนดสีพื้นหลัง สีตัวอักษรและความห่างระหว่างบรรทัด */
   background-color: #eaefef;
   color: #394256;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 img {
@@ -46,6 +48,10 @@ h5 {
   font-weight: bold;
 }
 
+.margin-20-bottom {
+  margin-bottom: 20px;
+}
+
 .contain-1,
 .text-1 {
   width: 60%;
@@ -64,7 +70,6 @@ h5 {
 .contain-5 {
   width: 60%;
   margin: 0 auto;
-  margin-bottom: 30px;
 }
 
 .contain-2 h3,
@@ -76,8 +81,8 @@ h5 {
   text-decoration: underline dashed;
 }
 
-.margin-30-bottom {
-  margin-bottom: 30px;
+.margin-40-bottom {
+  margin-bottom: 40px;
 }
 
 .margin-10-bottom {
@@ -147,7 +152,6 @@ h5 {
 .contain-6,
 .contain-7 {
   width: 60%;
-  margin-bottom: 30px;
 }
 
 .contain-6 h5,
@@ -176,10 +180,15 @@ h5 {
   overflow: scroll;
   border: 1px solid #34495e;
   transition: box-shadow 0.3s;
+  cursor: pointer;
 }
 
 .show-text:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.thai-font {
+  font-family: "Kanit";
 }
 
 footer {
